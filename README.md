@@ -2,14 +2,6 @@
 
 Loading more posts in WordPress template without reloading the page. For this project I'm using the WordPress REST API and a custom.js file to write down all of the ajax/js code.
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
 ### The Setup
 
 1. Create simple loop(WP_Query) to show the first chunk of posts. In my case I am showing the latest 12 posts from the default post post_type: post, but you can modify it with custom post type.
