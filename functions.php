@@ -5,7 +5,8 @@ add_action('rest_api_init', 'custom_api_get_news');
 function custom_api_get_news(){
   register_rest_route( 'news', '/all-posts', array(
     'methods' => 'GET',
-    'callback' => 'custom_api_get_news_callback'
+    'callback' => 'custom_api_get_news_callback',
+    'permission_callback' => '__return_true'
   ));
 }
 
